@@ -6,7 +6,7 @@
 // '' 안에 작성되는 원시 값은 문자로 인식되고 이들의 나열이 문자열이다.
 
 const string = 'hello'
-console.log(string);
+// console.log(string);
 // 타입은 typeof 메서드로 체크
 console.log(typeof string);
 
