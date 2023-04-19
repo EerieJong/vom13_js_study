@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <header id="header" class="active">
+  <header id="header" class="">
     <ul class="navi">
       <li>Home</li>
       <li>About</li>
@@ -19,11 +17,14 @@
       <li>Contact</li>
     </ul>
   </header>
+<!-- 
+  <h1>버튼을 클릭해주세요</h1>
 
-  <!--
+  <button onclick="onGeoOk()">click me</button> -->
+
   <div id="a"></div>
   <div id="b"></div>
-  <div id="c"></div> -->
+  <div id="c"></div>
   <div class="wrapper">
     <div class="btns">
       <button class="btn" id="dog">DOG</button>
@@ -37,14 +38,14 @@
   <script>
     $(function(){
       $('.btn').on('click', function(){
-        const nm = $(this).attr('id')
-        $('.img-box img').attr('src', '')
-        $('.img-box img').attr('src', `${nm}.jpg`)
-      })
-    })
+        const nm = $(this).attr('id');
+        $(".img-box img").attr('src', '');
+        $(".img-box img").attr('src', `${nm}.jpg`);
+      });
+    });
   </script>
-<!--
-  <div class="hollow">
+
+  <!-- <div class="hollow">
     <button class="click-btn">CLICK</button><br>
     <h1 class="num">0</h1>
   </div> -->
@@ -57,11 +58,7 @@
   <!-- <div class="top">
     <span>&#94;</span>
   </div>
-  <div class="hover"
-    style="position: fixed; width: 100px; height: 100px; top: 50px; left: 200px; background: red; z-index: 9999;">
-  </div> -->
-
-  <script src="js/event.js"></script>
+  <div class="hover" style="position:fixed; width:100px; height:100px; top:50px; left:200px; background:red; z-index:9999;"></div> -->
+  <script src="js/fetch.js"></script>
 </body>
-
 </html>
